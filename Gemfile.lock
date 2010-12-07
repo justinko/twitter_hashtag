@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    twitter_hashtag (0.0.1)
+    twitter_hashtag (0.0.2)
       json (~> 1.4.6)
 
 GEM

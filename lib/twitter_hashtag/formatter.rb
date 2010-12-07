@@ -7,13 +7,15 @@ module TwitterHashtag
       @results = response['results']
     end
     
+    attr_reader :results
+    
     def format
-      if @results.empty?
+      if results.empty?
         puts 'None found.'
         exit 1
       else
         puts 'Results:'
-        TwitterHashtag::Tweet.output(@results)
+        TwitterHashtag::Tweet.output(results)
       end
     end
 

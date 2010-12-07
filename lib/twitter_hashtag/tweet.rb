@@ -11,7 +11,9 @@ module TwitterHashtag
     
     def initialize(tweet_hash)
       @tweet_hash = tweet_hash
-    end  
+    end
+    
+    attr_reader :tweet_hash
   
     def output
       puts [SEPARATOR, user, text, link].join("\n")
@@ -20,15 +22,15 @@ module TwitterHashtag
   private
     
     def user
-      @tweet_hash['from_user']
+      tweet_hash['from_user']
     end
     
     def text
-      @tweet_hash['text']
+      tweet_hash['text']
     end
     
     def id
-      @tweet_hash['id_str']
+      tweet_hash['id_str']
     end
     
     def link
