@@ -9,8 +9,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Justin Ko"]
   s.email       = ["jko170@gmail.com"]
   s.homepage    = ""
-  s.summary     = %q{Search twitter hash tags from the command line}
-  s.description = %q{Search twitter hash tags from the command line}
+  s.summary     = %q{Search twitter hashtags from the command line}
+  s.description = %q{Search twitter hashtags from the command line}
 
   s.rubyforge_project = "twitter_hashtag"
 
