@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+
+require 'twitter_hashtag/cli'
+
+args = ARGV.dup
+ARGV.clear
+hashtag = args.shift.strip rescue 'help'
+
+TwitterHashtag::CLI.new(hashtag, args).process
